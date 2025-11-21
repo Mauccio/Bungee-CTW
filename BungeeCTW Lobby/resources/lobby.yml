@@ -1,0 +1,12 @@
+items:
+  roomselector:
+    name: "&eRoom Selector"
+    description:
+      - "&7Just a room selector."
+      - "&7Have fun!"
+    type: NETHER_STAR
+    data: 0
+    amount: 1
+    slot: 0
+    glide: false #Enchantment effect?
+    command: "rooms"
