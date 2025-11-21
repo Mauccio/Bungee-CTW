@@ -4,7 +4,7 @@ items:
     description:
       - "&7Just a room selector."
       - "&7Have fun!"
-    type: NETHER_STAR
+    type: COMPASS
     data: 0
     amount: 1
     slot: 0

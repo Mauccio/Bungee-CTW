@@ -1,52 +1,23 @@
-name: BungeeCTW-Server
+name: BungeeCTW-Lobby
 version: 1.0-ALPHA
-main: com.mauccio.bctws.CTWServer
-description: Mauccio's CTW Bungee Game Server
+main: com.mauccio.bctwl.CTWLobby
+description: Mauccio's CTW Bungee Lobby Server
 author: Mauccio
-depend: [WorldEdit]
 softdepend: [Vault, PlaceholderAPI]
 commands:
+  setlobby:
+    description: Set lobby
+    permission: ctwlobby.setlobby
+    usage: /setlobby
+    permission-message: You don't have <permission>
   ctw:
     description: Mauccios CTW main command.
     permission: ctw.admin
     usage: /ctw [reload|save|mapcycle]
     permission-message: You don't have <permission>
-  g:
-    description: General chat.
-    permission: ctw.generalchat
-    usage: /g [message]
-    permission-message: You don't have <permission>
-  ctwsetup:
-    description: General game configuration
-    permission: ctw.setup
-    usage: /ctwsetup [lobby|map|mapconfig|room]
-    permission-message: You don't have <permission>
-  gotoworld:
-    description: Navegates between Worlds
-    permission: ctw.setup
-    usage: /gotoworld [world name]
-    permission-message: You don't have <permission>
-  createworld:
-    description: Creates a new empty world and take you down there.
-    permission: ctw.setup
-    usage: /createworld [world name]
-    permission-message: You don't have <permission>
-  join:
-    description: Manage player access to game
-    permission: ctw.join
-    usage: /join [obs|red|blue|random]
-    permission-message: You don't have <permission>
-    aliases: [entrar, unirse, ctwjoin, jugar, play]
-  leave:
-    description: Allows players to leave the room game and back to the lobby
-    permission: ctw.join
-    usage: /leave
-    permission-message: You don't have <permission>
-    aliases: [salir]
-  toggle:
-    description: Manage player visual options
-    permission: ctw.join
-    usage: /toggle [obs|dms|blood]
+  spawn:
+    description: Take players to spawn points.
+    usage: /spawn
     permission-message: You don't have <permission>
   alert:
     description: Send an alert to the server.
@@ -60,29 +31,6 @@ commands:
     permission: ctw.stats
     permission-message: You don't have <permission>
     aliases: [est, estadisticas, statistiche, sta]
-  kit:
-    description: Opens Kits GUI
-    usage: /kit
-    permission: ctw.kit
-    permission-message: You don't have <permission>
-  savekit:
-    description: Save your custom kit.
-    usage: /savekit
-    permission: ctw.customkit
-    permission-message: You don't have <permission>
-    aliases: [skit, kitsave, ctw-savekit]
-  saveglobalkit:
-    description: Save the global kit.
-    usage: /saveglobalkit
-    permission: ctw.globalkit
-    permission-message: You don't have <permission>
-    aliases: [sgk, sgkit, guardarkitglobal, ctw-saveglobalkit]
-  kiteditor:
-    description: Edit your hotbar
-    usage: /kiteditor
-    permission: ctw.kiteditor
-    permission-message: You don't have <permission>
-    aliases: [keditor, kite, ctw-kiteditor, ke]
   rooms:
     description: View the room list
     usage: /rooms
