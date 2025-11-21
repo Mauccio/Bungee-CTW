@@ -1,9 +1,9 @@
 package com.mauccio.bctwl.bungee;
 
 public enum ServerStatus {
-    ACTIVE_GAME((short)13, "En Juego y Activo"),       // Lana verde
-    CHANGING_MAP((short)4, "Cambiando mapa, Activo"),  // Lana amarilla
-    INACTIVE((short)14, "Inactivo");                   // Lana roja
+    ACTIVE_GAME((short)13, "Active"),       // GREEN WOOL
+    CHANGING_MAP((short)4, "Changing Map"),  // YELLOW WOOL
+    INACTIVE((short)14, "Inactive");                   // RED WOOL
 
     private final short colorData;
     private final String description;
@@ -21,4 +21,5 @@ public enum ServerStatus {
         return description;
     }
 }
+
 
