@@ -1,0 +1,117 @@
+# Bungee CTW Server Configuration File | v1.4
+lobby-server: "lobby" # Name of your lobby server for BungeeCord, required.
+ingame:
+  allowed-commands:
+    - spawn
+    - tell
+    - m
+    - msg
+    - t
+    - whisper
+    - w
+    - helpop
+    - report
+
+# Pool System
+editor-mode: true
+pools:
+  default: {}
+active-pool: default # Pool at starting server.
+
+# Game Settings
+message-decorator: "" # Optional.
+user-fireworks-on-win: true
+keep-teams-on-win: true
+instakill-on-void: false
+disable-fall-damage: true
+global-tablist: false # Enable to have a global tablist instead of independent.
+use-sql-for-kits: false # Only for Personal Kits, Global Kit always use YAML.
+kit-menu: false # Enable Kit Service?
+prohibited-msg: true # You can edit it in messages.yml (prohibited-zone)
+no-respawn-screen: false
+
+no-crafteable-items: {}
+#  - WOOL
+#  - ANVIl
+
+no-protected-blocks: {}
+#  - WEB
+
+# Vip's Armor Settings
+vip-armors:
+  blue:
+    R: 181
+    G: 85
+    B: 255
+  red:
+    R: 255
+    G: 169
+    B: 85
+
+# Sound Settings
+sounds:
+  enabled: true
+  alert: NOTE_PLING
+  win-wool-sound: VILLAGER_YES
+  wool-pickup-sound: FIREWORK_LAUNCH
+  reversing-sound: ORB_PICKUP
+  team-join-sound: LEVEL_UP
+  join-command: CHEST_OPEN
+  map-change: LEVEL_UP
+  gui: CHEST_OPEN
+  team-win-sound: WITHER_DEATH
+  your-stats: ORB_PICKUP
+  error: ENDERDRAGON_HIT
+  tip: ITEM_PICKUP
+  headshot: BLAZE_DEATH
+
+# Title Settings:
+# Default values: 10, 30, 10
+titles:
+  join:
+    room:
+      fade-in: 10
+      stay: 30
+      fade-out: 10
+    red:
+      fade-in: 10
+      stay: 30
+      fade-out: 10
+    blue:
+      fade-in: 10
+      stay: 30
+      fade-out: 10
+  change-map:
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+  team-win:
+    red:
+      fade-in: 10
+      stay: 30
+      fade-out: 10
+    blue:
+      fade-in: 10
+      stay: 30
+      fade-out: 10
+  headshot:
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+  wool-pickup:
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+  wool-placed:
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+  countdown:
+    fade-in: 10
+    stay: 30
+    fade-out: 10
+
+# Coins Settings
+coins:
+  kill: 5
+  capture: 10
